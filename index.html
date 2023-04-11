@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta
+      name="description"
+      content="A demonstration of what can be accomplished visually through CSS-based design."
+    />
+    <meta name="robots" content="all" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<title>Guy Bourdin</title>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="https://cdn.glitch.me/40ad4a80-0498-4abb-a891-5774371c88e1/0328(2).mp4?v=1680049910004" type="video/mp4">
+
+</video>
+
+    <div class="toggle">
+
+    <div class="full-screen-menu">
+        <ul1>
+            <li><a href="/gallery.html">GALLERY</a></li>
+            <li><a href="/solo-exhibitions.html">SOLO EXHIBITION</a></li>
+            <li><a href="/publications.html">PUBLICATIONS</a></li>
+            <li><a href="/awards.html">AWARDS</a></li>
+        </ul1>
+      </div>
+    </div>
+  
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#" class="toggle">MENU</a></li>
+      <li class="home"><a href="/index.html"></a>GUY BOURDIN</li>
+      <li><a href="/INFO.html">INFO</a></li>
+
+    </ul>
+    <img src="https://cdn.glitch.global/eb4f66ff-10d7-4606-bed6-ab111ca2a8d8/588a64f5d06f6719692a2d13.png?v=1680165728062" alt="" class="menu-btn">
+  </nav>
+
+<div class="copyright">
+  <p>Copyright © Guy Bourdin, All Rights Reserved.</p>
+</div>
+
+  <script>  
+    const menuBtn = document.querySelector('.menu-btn')
+    const navlinks = document.querySelector('.nav-links')
+
+    menuBtn.addEventListener('click',()=>{
+      navlinks.classList.toggle('mobile-menu')
+    })
+  </script>
+  
+  <script>
+    $(document).ready(function(){
+      $('.toggle').click(function(){
+          $('.full-screen-menu').toggleClass('active');
+      });
+    });
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta
+      name="description"
+      content="A demonstration of what can be accomplished visually through CSS-based design."
+    />
+    <meta name="robots" content="all" />
+    <link rel="stylesheet" href="solo-exhibitions.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<title>Guy Bourdin</title>
+</head>
+<body>
+
+ <!-- == SOLO EXHIBITION == -->
+ <div class="row">
+    <img src="https://cdn.glitch.global/40ad4a80-0498-4abb-a891-5774371c88e1/paris-photo-2019-louise-alexander-gallery-2.jpg?v=1680775275595" alt="2019" width="100%">   
+  <div class="column">
+    <h>SOLO EXHIBITIONS:</h>
+    <p>1950: First exhibition of drawings and paintings at Galerie, Rue de Bourgogne, Paris. <br>
+1952: Exhibition of photographs at Galerie 29, The catalogue includes an introduction by Man Ray. Paris.<br>
+1953: Exhibition of photographs under the pseudonym "Edwin Hallan" at Galerie Huit, Paris.<br>
+1954: Exhibition of drawings at Galerie de Beaune, Paris.<br>
+1955: Exhibition of drawings at Galerie des Amis des Arts, Paris.<br>
+1955: Exhibition of paintings at Galerie Charpentier, Paris.<br>
+1956: Exhibition of drawings at Galerie de Seine, Paris.<br>
+1957: Exhibition of paintings and drawings at the Peter Deitsch Gallery, New York City.<br>
+1961: Salon International du Portrait Photographie.<br>
+2003–2013: The Retrospective, Victoria and Albert Museum, London; National Gallery Victoria, Melbourne, 2004; Galerie nationale du Jeu de Paume, Paris, 2004; Foam Fotografiemuseum Amsterdam (Foam), Amsterdam, 2004; Kunstsammlung Nordrhein-Westfalen, Düsseldorf, Germany, 2005; National Art Museum of China, Beijing, China, 2005; Shanghai Art Museum, Shanghai, China, 2006; Tokyo Metropolitan Museum of Photography, Tokyo, 2006; Daimaru Umeda Museum, Osaka, Japan, 2006; KunstHausWien, Vienna, Austria, 2008; FotoMuseum, Antwerp, Belgium, 2008; Moscow House of Photography, Moscow, 2009; Museu Brasileiro de Escultura (MuBE), São Paulo, Brazil, 2009; Museu de Arte Contemporânea, Porto Alegre, Brazil 2011; Deichtorhallen, Hamburg, Germany, 2013.<br>
+2006–2014: A Message For You, Phillips, New York City, 2006; Peggy Guggenheim Collection, Venice, Italy, 2006; HSBC Foundation, Paris, 2006; Hollywood Centre, Hong Kong, 2007; Today Art Museum, Beijing, 2007; Gallery Carla Sozzani, Milan, Italy, 2009; Photography Festival, Cannes, France, 2009; Canal Isabel II, Madrid, 2010; Louise Alexander Gallery, Porto Cervo, Italy, 2014.<br>
+2009: Ses films, Le Bon Marché, Paris, 2009; 10 Corso Como, Seoul, South Korea.<br>
+2010: In Between, French Consulate, New York City.<br>
+2013: Guy Bourdin: Archives, Louise Alexander Gallery, Porto Cervo, Italy.<br>
+2014: Guy Bourdin: Image Maker, Somerset House, London.<br>
+2015: Guy Bourdin: Mise en abyme, Paris Photo, Louise Alexander Gallery, Paris.<br>
+2015: Guy Bourdin: Avant Garde, Fotografiska, Stockholm.<br>
+2016: Guy Bourdin: The Portraits, Studio des Acacias and Louise Alexander Gallery, Paris.<br>
+2017: Guy Bourdin, solo show at Photo London 2017, Louise Alexander Gallery, Porto Cervo, Italy.<br>
+2017: Guy Bourdin, Louise Alexander Gallery, Porto Cervo, Italy.<br>
+2017: Guy Bourdin: Image Maker, Helmut Newton Foundation, Berlin.<br>
+2017: Femininities - Guy Bourdin, Maison Chloé, Paris.<br>
+2019: Campredon Art Center, Isle sur la Sorgue, France.<br>
+2019: Museum of Photography Charles Nègre, Nice, France[citation needed].</p>
+    </div>
+    <div class="copyright">
+  <p>Copyright © Guy Bourdin, All Rights Reserved.</p>
+  </div>
+</div>  
+    <div class="toggle">
+
+    <div class="full-screen-menu">
+        <ul1>
+            <li><a href="/gallery.html">GALLERY</a></li>
+            <li><a href="/solo-exhibitions.html">SOLO EXHIBITION</a></li>
+            <li><a href="/publications.html">PUBLICATIONS</a></li>
+            <li><a href="/awards.html">AWARDS</a></li>
+        </ul1>
+      </div>
+    </div>
+  
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#" class="toggle">MENU</a></li>
+      <li class="home"><a href="/index.html">GUY BOURDIN</a></li>
+      <li><a href="/INFO.html">INFO</a></li>
+
+    </ul>
+    <img src="https://cdn.glitch.global/eb4f66ff-10d7-4606-bed6-ab111ca2a8d8/588a64f5d06f6719692a2d13.png?v=1680165728062" alt="" class="menu-btn">
+  </nav>
+
+<div class="copyright">
+  <p>Copyright © Guy Bourdin, All Rights Reserved.</p>
+</div>
+
+  <script>  
+    const menuBtn = document.querySelector('.menu-btn')
+    const navlinks = document.querySelector('.nav-links')
+
+    menuBtn.addEventListener('click',()=>{
+      navlinks.classList.toggle('mobile-menu')
+    })
+  </script>
+  
+  <script>
+    $(document).ready(function(){
+      $('.toggle').click(function(){
+          $('.full-screen-menu').toggleClass('active');
+      });
+    });
+  </script>
+  
+</body>
+</html>
+

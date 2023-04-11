@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta
+      name="description"
+      content="A demonstration of what can be accomplished visually through CSS-based design."
+    />
+    <meta name="robots" content="all" />
+    <link rel="stylesheet" href="INFO.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<title>Guy Bourdin</title>
+</head>
+<body>
+
+<section class="INFOBIO"> 
+<div class="row">  
+<div class="col">
+  <p1>Guy Bourdin (2 December 1928 – 29 March 1991), was a French artist and fashion photographer known for his provocative images. From 1955, Bourdin worked mostly with Vogue as well as other publications including Harper's Bazaar. He shot ad campaigns for Chanel, Charles Jourdan, Pentax and Bloomingdale's.<br> <br>His work is collected by important institutions including Tate in London, MoMA, San Francisco Museum of Modern Art and Getty Museum. The first retrospective exhibition of his work was held at the Victoria and Albert Museum in London in 2003, and then toured the National Gallery of Victoria in Melbourne, Australia, and the Galerie nationale du Jeu de Paume in Paris. The Tate is permanently exhibiting a part of its collection (one of the largest) with works made between 1950 and 1955.<br> <br>He is considered one of the best-known photographers of fashion and advertising of the second half of the 20th century. He set the stage for a new kind of fashion photography. "While conventional fashion images make beauty and clothing their central elements, Bourdin’s photographs offer a radical alternative."</p1> 
+ <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="https://cdn.glitch.global/eb4f66ff-10d7-4606-bed6-ab111ca2a8d8/18825%2BART%2B031K%2BGB.jpg?v=1680221519301" alt="bio-photo" style="width:500px;height:500px">
+    </div>
+    <div class="flip-box-back">
+      <img src="https://cdn.glitch.global/eb4f66ff-10d7-4606-bed6-ab111ca2a8d8/ezgif-1-5cd9d56501.jpg?v=1680221516658" alt="bio-photo" style="width:500px;height:500px">
+    </div>
+  </div>
+ </div>
+</div>
+</div>
+</section>
+
+    <div class="toggle">
+
+    <div class="full-screen-menu">
+        <ul1>
+            <li><a href="/gallery.html">GALLERY</a></li>
+            <li><a href="/solo-exhibitions.html">SOLO EXHIBITION</a></li>
+            <li><a href="/publications.html">PUBLICATIONS</a></li>
+            <li><a href="/awards.html">AWARDS</a></li>
+        </ul1>
+      </div>
+    </div>
+  
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#" class="toggle">MENU</a></li>
+      <li class="home"><a href="/index.html">GUY BOURDIN</a></li>
+      <li><a href="/INFO.html">INFO</a></li>
+
+    </ul>
+    <img src="https://cdn.glitch.global/eb4f66ff-10d7-4606-bed6-ab111ca2a8d8/588a64f5d06f6719692a2d13.png?v=1680165728062" alt="" class="menu-btn">
+  </nav>
+
+<div class="copyright">
+  <p>Copyright © Guy Bourdin, All Rights Reserved.</p>
+</div>
+
+  <script>  
+    const menuBtn = document.querySelector('.menu-btn')
+    const navlinks = document.querySelector('.nav-links')
+
+    menuBtn.addEventListener('click',()=>{
+      navlinks.classList.toggle('mobile-menu')
+    })
+  </script>
+  
+  <script>
+    $(document).ready(function(){
+      $('.toggle').click(function(){
+          $('.full-screen-menu').toggleClass('active');
+      });
+    });
+  </script>
+  
+</body>
+</html>
